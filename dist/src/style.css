@@ -26,14 +26,14 @@
     @apply absolute uppercase px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
 }
 #hero {
-    background-image: url('../dist/images/desktop/image-hero.jpg');
+    background-image: url('./images/desktop/image-hero.jpg');
     background-repeat:no-repeat;
     background-size: cover;
 }
 
 @media (max-width: 576px) {
     #hero {
-        background-image: url('../dist/images/mobile/image-hero.jpg');
+        background-image: url('./images/mobile/image-hero.jpg');
         background-postion: center;
     }
 }

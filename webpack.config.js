@@ -1,7 +1,8 @@
 const path=require('path');
+console.log(__dirname) 
 module.exports ={
     mode:'development',
-    entry:'./src/index.js',
+    entry:'./dist/src/index.js',
     output:{
         path:path.resolve(__dirname,'dist'),
         filename:'bundle.js',
@@ -20,7 +21,7 @@ module.exports ={
         rules: [
           {
             test: /\.css$/i,
-            include: path.resolve(__dirname, 'src'),
+            include: path.resolve(__dirname, 'dist/src'),
             use: ['style-loader', 'css-loader', 'postcss-loader'],
           },
         ],
