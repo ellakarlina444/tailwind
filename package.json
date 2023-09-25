@@ -27,5 +27,8 @@
     "url": "https://github.com/ellakarlina444/tailwind/issues"
   },
   "homepage": "https://github.com/ellakarlina444/tailwind#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4"
+  }
 }
