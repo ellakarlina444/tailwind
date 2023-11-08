@@ -30,15 +30,16 @@ window.addEventListener("scroll", function () {
     console.log(topHeader);
     for (const iterator of topHeader) {
         iterator.classList.toggle("active", shouldToggle);
-        // document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
     }
-
-    if(shouldToggle){
-        document.getElementById("ella").setAttribute("class","stylesticky")
-    }else{
-        document.getElementById("ella").setAttribute("class","rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16")
-
+    
+    if(isScrolled){
+        document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
+        // document.getElementById("ella").setAttribute("class","stylesticky")
     }
+    // else{
+    //     document.getElementById("ella").setAttribute("class","rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16")
+
+    // }
     lastScroll = currentScroll;
 });
 
