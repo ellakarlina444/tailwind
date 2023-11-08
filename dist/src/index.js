@@ -33,7 +33,9 @@ window.addEventListener("scroll", function () {
     }
     
     if(isScrolled){
-        document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
+        // document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
+        document.getElementById("ella").classList.remove("stickydeff")
+        document.getElementById("ella").classList.add("stylesticky")
         // document.getElementById("ella").setAttribute("class","stylesticky")
     }
     // else{
