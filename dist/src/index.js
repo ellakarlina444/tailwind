@@ -1,16 +1,39 @@
 console.log("index.js")
 import "./style.css"
 
+// if(document.getElementById('menu-loopstudio')!==undefined || document.getElementById('menu-loopstudio')){
+//     const btn=document.getElementById('menu-loopstudio');
+//     const menu=document.getElementById('menu');
+//     btn.addEventListener('click',navToggle);
+    
+//     function navToggle(){
+//         btn.classList.toggle('open');
+//         menu.classList.toggle('flex');
+//         menu.classList.toggle('hidden');
+//     }
 
-const btn=document.getElementById('menu-loopstudio');
-const menu=document.getElementById('menu');
-btn.addEventListener('click',navToggle);
+// }
 
-function navToggle(){
-    btn.classList.toggle('open');
-    menu.classList.toggle('flex');
-    menu.classList.toggle('hidden');
-}
+var lastScroll = 0;
+var isScrolled = false;
+window.addEventListener("scroll", function () {
+    var topHeader = document.querySelectorAll(".topmenu");
+    var currentScroll =
+    window.pageYOffset ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0;
+    var scrollDirection = currentScroll < lastScroll;
+    var shouldToggle = isScrolled && scrollDirection;
+    isScrolled = currentScroll > 100;
+    console.log(currentScroll,lastScroll,isScrolled);
+    console.log(topHeader);
+    for (const iterator of topHeader) {
+        iterator.classList.toggle("active", shouldToggle);
+        document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
+    }
+    lastScroll = currentScroll;
+});
 
 // (() => {
 //     const application = Stimulus.Application.start()
