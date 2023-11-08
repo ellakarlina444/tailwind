@@ -30,8 +30,12 @@ window.addEventListener("scroll", function () {
     console.log(topHeader);
     for (const iterator of topHeader) {
         iterator.classList.toggle("active", shouldToggle);
+        // document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
     }
-    document.getElementById("ella").classList.toggle("stylesticky",shouldToggle)
+
+    if(shouldToggle){
+        document.getElementById("ella").setAttribute("class","stylesticky")
+    }
     lastScroll = currentScroll;
 });
 
