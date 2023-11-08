@@ -35,6 +35,9 @@ window.addEventListener("scroll", function () {
 
     if(shouldToggle){
         document.getElementById("ella").setAttribute("class","stylesticky")
+    }else{
+        document.getElementById("ella").setAttribute("class","rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16")
+
     }
     lastScroll = currentScroll;
 });
