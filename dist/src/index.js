@@ -37,6 +37,10 @@ window.addEventListener("scroll", function () {
         document.getElementById("ella").classList.remove("stickydeff")
         document.getElementById("ella").classList.add("stylesticky")
         // document.getElementById("ella").setAttribute("class","stylesticky")
+    }else{
+        document.getElementById("ella").classList.remove("stylesticky")
+        document.getElementById("ella").classList.add("stickydeff")
+
     }
     // else{
     //     document.getElementById("ella").setAttribute("class","rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16")
