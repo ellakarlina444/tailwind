@@ -7,6 +7,9 @@
        @apply absolute uppercase px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black
     }
 }*/
+.stickydeff{
+    @apply rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16;
+}
 .stylesticky{
     @apply rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-10 w-10;
 }
