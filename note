@@ -1,0 +1,23 @@
+-- INSTALASI AWAL --
+    
+npm init
+npm i -D tailwindcss    
+npm i -D webpack webpack-cli webpack-dev-server style-loader css-loader postcss postcss-loader postcss-preset-env
+npx tailwindcss init   
+
+-- TO GITHUB --
+git init          
+git add . //untuk add seluruh folder ke git kalo git add note hanya add note ke github
+git config --global user.email "oek@gmail.com";
+git config --global user.name "oktaviani ella karlina";
+git commit -m 'Initial Commit';
+git remote add origin https://github.com/ellakarlina444/tailwind.git
+git branch -M main
+git push -u origin main
+
+-- Run Project --
+npx run dev
+
+
+--notes --
+git ls-remote : untuk  melihat link git yg di remote/push
